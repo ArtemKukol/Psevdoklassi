@@ -1,0 +1,108 @@
+body {
+   font: 20px/1.5 sans-serif;
+}
+/* 1 part
+a {
+   display: block;
+}
+
+.a:hover {
+   color: #2196f3;
+   text-decoration: none;
+}
+
+.b:hover + p {
+   color: #2196f3;
+   text-decoration: none;
+}
+
+.active:active {
+   color: #2196f3;
+   text-decoration: none;
+}
+
+.visited:visited {
+   color: #2196f3;
+   text-decoration: none;
+}
+
+.focus:focus {
+   color: #2196f3;
+   text-decoration: none;
+}
+*/
+
+.link {
+   display: block;
+   margin-bottom: 20px;
+
+   color: #333;
+   text-decoration: none;
+}
+
+.hover:hover {
+   color: #2196f3;
+}
+
+.active:active {
+   color: #f44336;
+}
+
+.visited:visited {
+   color:#673ab7;
+}
+
+.focus:focus {
+   color: #4caf50;
+}
+
+.square {
+   width: 150px;
+   height: 150px;
+   padding: 50px;
+
+   font-size: 15px;
+
+   background: #ccc;
+}
+
+section p:nth-child(2) {
+   color: #2196f3;
+}
+
+section span:nth-child(even) {
+   color: #2196f3;
+}
+
+section span:nth-child(odd) {
+   color: #3f51b5;
+}
+
+[class^="figure"] {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 50px;
+   height: 50px;
+   margin: 5px;
+
+   color: #1c1c1c;
+
+   font-weight: bold;
+}
+
+.figure-circle {
+   border-radius: 50%;
+}
+
+.child div:nth-child(even),
+.type div:nth-of-type(even) {
+  /*  Red Color  */
+  background: #f44336;
+}
+
+.child div:nth-child(odd),
+.type div:nth-of-type(odd) {
+  /*  Green Color  */
+  background: #4caf50;
+}

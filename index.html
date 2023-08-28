@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Psevdoklassi</title>
+</head>
+<body>
+
+   <h1>Псевдоклассы</h1>
+   <!-- 1 part
+   <a href="#" >Обычная ссылка</a>
+   <a href="#" class="a">Наведи курсор мыши на меня. Я поменяю цвет на тот, что указан в CSS</a>
+   <a href="#" class="b">Наведи курсор мыши на меня. Я поменяю цвет соседнего блока о_О</a>
+   <p>(╯ ° □ °) ╯ (┻━┻)</p>
+
+   <a href="#" class="active">Стиль при нажатии на ссылку, но до перехода по ней</a>
+   <a href="#" class="visited">Стиль уже посещенной ссылки</a>
+   <a href="#" class="focus">Стиль при событии фокуса на элементе</a>
+   -->
+
+   <a href="#" class="link hover">Наведи курсор мыши на меня</a>
+   <a href="#" class="link active">Нажми на меня и не отпускай</a>
+   <a href="#" class="link visited">Посети меня</a>
+   <a href="#" class="link focus">Сфокусируйся на мне с помощью клавиши Tab</a>
+   <div class="hover square">А я блочный элемент, на меня тоже можно навести корсор мыши</div>
+
+   <h2>Структурные псевдоклассы</h2>
+
+   <section>
+      <p>Параграф 1</p>
+      <p>Параграф 2</p>
+      <p>Параграф 3</p>
+   </section>
+
+   <!--
+      :nth-child(2n) — выбрать каждый второй элемент. 2, 4, 6, 8... Число может стоять любое. Если поставить 3n, то будет выбран каждый третий элемент и так далее. Это касается всех последовательностей.
+      :nth-child(2n + 1) — выбрать каждый второй элемент, начиная c первого. 1, 3, 5, 7, 9...
+      :nth-child(even) — выбрать все четные элементы. То же самое, что и :nth-child(2n).
+      :nth-child(odd) — выбрать все нечетные элементы. То же самое, что и :nth-child(2n + 1)
+-->
+
+<section>
+   <span>1</span>
+   <span>2</span>
+   <span>3</span>
+   <span>4</span>
+   <span>5</span>
+   <span>6</span>
+   <span>7</span>
+   <span>8</span>
+   <span>9</span>
+   <span>10</span>
+</section>
+
+<section class="child">
+   <h2>nth-child() <br> <small>First Row</small></h2>
+   <div class="figure-box">1</div>
+   <div class="figure-circle">2</div>
+   <div class="figure-box">3</div>
+   <div class="figure-circle">4</div>
+   <h2>nth-child() <br> <small>Second Row</small></h2>
+   <div class="figure-box">6</div>
+   <div class="figure-circle">7</div>
+   <div class="figure-box">8</div>
+   <div class="figure-circle">9</div>
+</section>
+
+<hr>
+
+<section class="type">
+   <h2>nth-child() <br> <small>First Row</small></h2>
+   <div class="figure-box">1</div>
+   <div class="figure-circle">2</div>
+   <div class="figure-box">3</div>
+   <div class="figure-circle">4</div>
+   <h2>nth-child() <br> <small>Second Row</small></h2>
+   <div class="figure-box">6</div>
+   <div class="figure-circle">7</div>
+   <div class="figure-box">8</div>
+   <div class="figure-circle">9</div>
+</section>
+
+</body>
+</html>
